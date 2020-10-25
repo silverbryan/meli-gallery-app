@@ -1,0 +1,9 @@
+.card {
+    border: none;
+    background-color: transparent;
+}
+.card__content {
+    display: flex;
+    justify-content: space-evenly;
+}
+

@@ -1,0 +1,16 @@
+.searchBar {
+    width: 90%;
+}
+
+.searchBar__button {
+    border: none;
+    background-color: #fff;
+    color: #303030;
+}
+
+.searchBar__input {
+    border: none;
+    background-color: transparent;
+    color: #303030;
+    font-size: 14px;
+}
