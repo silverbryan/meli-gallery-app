@@ -4,7 +4,7 @@ const server = require("express").Router();
 
 const { PATH_BASE } = process.env;
 
-server.get('/', (req, res, next) => {
+server.get('/', (req, res) => {
     const searchTerm = req.query.q;
     axios.get(PATH_BASE + '/sites/MLA/search?q=' + searchTerm)
         .then(response => {
