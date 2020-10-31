@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { SEARCH_BY_QUERY } from '../constants';
-const { API_URL } = process.env
+const { API_URL } = process
 
 export const searchByQuery = searchTerm => dispatch => {
     console.log(API_URL);
