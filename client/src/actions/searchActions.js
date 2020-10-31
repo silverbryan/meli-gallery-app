@@ -1,6 +1,15 @@
 import axios from 'axios'
-const API_URL = process.env.API_URL;
+import { SEARCH_BY_QUERY } from '../constants';
+const { API_URL } = process.env
 
-export const getSearchResults = searchTerm => dispatch => {
-    return console.log(API_URL);
+export const searchByQuery = searchTerm => dispatch => {
+    console.log(API_URL);
+    axios.get('http://localhost:3001/api/search?q=' + searchTerm)
+        .then(res => {
+            console.log(res);
+            dispatch({
+                type: SEARCH_BY_QUERY,
+                payload: res,
+            })
+        })
 }

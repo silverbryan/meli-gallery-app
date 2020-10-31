@@ -1,2 +1,2 @@
 //SEARCH
-export const SEARCH_RESULTS = 'SEARCH_RESULTS';
+export const SEARCH_BY_QUERY = 'SEARCH_BY_QUERY';
